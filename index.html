@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shreyansi Gheware — building with AI, in public</title>
-<meta name="description" content="Shreyansi Gheware — AI Intern at UniGPS Solutions. GenAI, agentic AI, Docker and Kubernetes. Learning in public: something shipped from every module.">
+<title>Shreyansi Gheware — LLM apps, RAG and evaluation</title>
+<meta name="description" content="Shreyansi Gheware builds LLM applications that answer from your own data, cite their sources and are tested with evaluation sets. Brain Upgrade team, Bengaluru.">
 
 <meta property="og:title" content="Shreyansi Gheware">
-<meta property="og:description" content="AI Intern at UniGPS Solutions. GenAI, agentic AI, Docker and Kubernetes. Learning in public.">
+<meta property="og:description" content="LLM apps, RAG and evaluation. Brain Upgrade team, Bengaluru.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://shreyansigheware.github.io">
 
@@ -234,16 +234,16 @@
 </style>
 </head>
 <body>
-<div class="wrap">
+  <div class="wrap">
 
   <header>
     <img class="avatar" src="me.jpg" width="360" height="360" alt="Shreyansi Gheware">
     <div>
       <h1>Shreyansi Gheware</h1>
-      <p class="role">AI Intern @ UniGPS Solutions · Bengaluru, India</p>
+      <p class="role">LLM apps, RAG &amp; evaluation · <a href="https://github.com/brainupgrade-in">Brain Upgrade</a> team · Bengaluru, India</p>
       <p class="lede">
-        I'm 18, and I'm spending this year learning to build with AI — properly, by building
-        things and putting them where people can see them.
+        I build LLM applications that answer from your own documents and data, show the source
+        behind every answer, and get tested with an evaluation set before and after every change.
       </p>
     </div>
   </header>
@@ -251,85 +251,153 @@
   <section>
     <h2>How I work</h2>
     <p class="rule">
-      A course isn't finished when the video ends. It's finished when something public exists —
-      a repo, a live URL, a written teardown, a recorded explainer. Certificates prove
-      attendance. Artifacts prove skill.
+      An answer the system can't trace to a source isn't an answer. Ground it, cite it,
+      evaluate it, then ship it.
     </p>
   </section>
 
   <section>
-    <h2>Now</h2>
+    <h2>Projects I work on</h2>
 
     <div class="card">
       <div class="card-top">
-        <h3>AI Intern — GenAI, Agentic AI &amp; DevOps</h3>
+        <h3><a href="https://github.com/brainupgrade-in/aiagentic-comp-frontdeskai">FrontDesk AI</a></h3>
+        <span class="status live">Open source</span>
+      </div>
+      <p class="org">A multi-agent employee support desk, grounded in RAG</p>
+      <ul>
+        <li>Leave, tickets, expense claims and payslips; a supervisor routes each request to HR, IT, finance or facilities agents</li>
+        <li>Answers grounded in a ChromaDB vector store, so the model doesn't invent policy</li>
+        <li>Reference app for our agentic AI course, deployed per participant on Kubernetes</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">FastAPI</span><span class="tag">LangGraph</span><span class="tag">LiteLLM</span><span class="tag">ChromaDB</span><span class="tag">Kubernetes</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3><a href="https://thaliscan.glucoray.com">ThaliScan / Glucoray</a></h3>
+        <span class="status live">Live</span>
+      </div>
+      <p class="org">AI food scanning that never invents a number</p>
+      <ul>
+        <li>Every answer shows the matched food-table row and its source</li>
+        <li>I built its Telegram webhook, work on the LLM agent and build its evaluation sets: real inputs scored before and after every change</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">Claude API</span><span class="tag">Docker Compose</span><span class="tag">Telegram</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3><a href="https://agentgrow.io">AgentGrow</a></h3>
+        <span class="status live">Live</span>
+      </div>
+      <p class="org">AI agents for a business, with a human approving every message</p>
+      <ul>
+        <li>Agents draft marketing content, run outreach and report to the owner</li>
+        <li>Answers grounded in the business's own content through ChromaDB, each linked back to the record it came from</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">LLM agents</span><span class="tag">ChromaDB</span><span class="tag">RAG</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3><a href="https://nazarai.gheware-ai.com">Nazar AI</a></h3>
+        <span class="status">Research prototype</span>
+      </div>
+      <p class="org">Can a phone and a lens a doctor already owns screen for retinopathy?</p>
+      <ul>
+        <li>A smartphone camera held to a 20-dioptre condensing lens, and whether that image is good enough for a vision-language model to flag retinopathy</li>
+        <li>The pairing costs a fraction of a fundus camera. No clinical claims.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Vision-language models</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3><a href="https://devops.gheware.com/training/cloud-labs.html">Cloud Labs</a></h3>
+        <span class="status live">Live</span>
+      </div>
+      <p class="org">Live Kubernetes and agentic AI sandboxes in the browser</p>
+      <ul>
+        <li>A secure browser terminal onto a live cluster, with gamified deploy objectives</li>
+        <li>I provision the sandboxes and support live cohorts</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">AWS EKS</span><span class="tag">k3s</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3><a href="https://shreyansigheware.github.io/hackboard/">Hackboard</a></h3>
+        <span class="status live">Live</span>
+      </div>
+      <p class="org">Every hackathon this month, filterable down to the ones you can actually enter</p>
+      <ul>
+        <li>Refreshed daily by a scheduled GitHub Actions job (<a href="https://github.com/shreyansigheware/hackboard">code</a>)</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">GitHub Actions</span>
+      </div>
+    </div>
+
+    <p>More from the team: <a href="https://github.com/brainupgrade-in">the Brain Upgrade portfolio</a>.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="card">
+      <div class="card-top">
+        <h3>AI internship: LLM testing, agentic AI and evaluation</h3>
         <span class="when">May 2026 — present</span>
       </div>
       <p class="org">UniGPS Solutions · Bengaluru</p>
       <ul>
-        <li>GenAI and agentic AI — building and testing LLM-driven workflows</li>
-        <li>DevOps — Docker containers, Kubernetes for deployment and orchestration</li>
-        <li>Running open models on local GPU hardware rather than hosted APIs</li>
+        <li>Evaluation data sets that measure how well LLM apps actually perform</li>
+        <li>Agentic AI applications: multi-step agents and tool use</li>
+        <li>The LLM token-economics dashboard: tokens and spend per learner for a training cohort</li>
+        <li>Assisting agentic AI training delivery for Claude, GitHub Copilot and Microsoft Copilot</li>
       </ul>
-      <div class="tags">
-        <span class="tag">GenAI</span>
-        <span class="tag">Agentic AI</span>
-        <span class="tag">Claude Code</span>
-        <span class="tag">Python</span>
-        <span class="tag">Docker</span>
-        <span class="tag">Kubernetes</span>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3>Kubernetes &amp; agentic AI labs</h3>
+        <span class="when">2024 — present</span>
       </div>
+      <p class="org">Brain Upgrade · Bengaluru</p>
+      <ul>
+        <li>Sandbox provisioning for professional training cohorts, on AWS EKS</li>
+        <li>Local model inference tuning on an NVIDIA DGX Spark</li>
+        <li>Live support and fault diagnosis during cohort delivery</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <h3>GPS device configuration</h3>
+        <span class="when">2020 — 2023</span>
+      </div>
+      <p class="org">UniGPS Solutions · Bengaluru</p>
+      <ul>
+        <li>Configured GPS tracking devices and set up client data for the vehicle-tracking platform</li>
+      </ul>
     </div>
   </section>
 
   <section>
-    <h2>Learning in public</h2>
-    <p>
-      I run my own learning plan: pick a module, work it, and finish it by shipping something
-      public. This table is the honest state of it — including the parts that aren't done.
-    </p>
-
-    <div class="card">
-      <div class="card-top">
-        <h3>Anthropic Academy — two courses</h3>
-        <span class="status live">Complete</span>
-      </div>
-      <p class="org">Foundations for building with Claude</p>
-    </div>
-
-    <div class="card">
-      <div class="card-top">
-        <h3>be10x — AI tools certification</h3>
-        <span class="status live">Complete</span>
-      </div>
-      <p class="org">Applied AI tooling</p>
-    </div>
-
-    <div class="card">
-      <div class="card-top">
-        <h3>Claude Code for marketing</h3>
-        <span class="status">Artifact pending</span>
-      </div>
-      <p class="org">Full course worked through 11 Aug 2026 — shipping one real marketing asset built with Claude Code</p>
-    </div>
-
-    <div class="card">
-      <div class="card-top">
-        <h3>Articulation &amp; technical explanation</h3>
-        <span class="status">Artifact pending</span>
-      </div>
-      <p class="org">Ends in a recorded three-minute unscripted explainer of a technical topic</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <div class="card">
-      <div class="card-top">
-        <h3>CBSE Class XII — Physics, Chemistry, Maths, Computer Science</h3>
-        <span class="when">2024 — 2026</span>
-      </div>
-      <p class="org">Sri Kumaran Children's Home, Bengaluru · 91.2% (best of five) · PCM 89% · A1 in every subject</p>
+    <h2>Stack</h2>
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude API</span><span class="tag">Claude Code</span><span class="tag">LangGraph</span><span class="tag">LiteLLM</span><span class="tag">ChromaDB</span><span class="tag">RAG</span><span class="tag">Evaluation sets</span><span class="tag">SQLAlchemy</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">AWS EKS / EC2</span><span class="tag">Grafana</span><span class="tag">GitHub Actions</span>
     </div>
   </section>
 
@@ -338,13 +406,15 @@
     <div class="links">
       <a href="https://github.com/shreyansigheware">GitHub</a>
       <a href="https://www.linkedin.com/in/shreyansigheware">LinkedIn</a>
+      <a href="https://www.upwork.com/freelancers/~01e1aacb61f14c318a">Upwork</a>
+      <a href="https://github.com/brainupgrade-in">Brain Upgrade</a>
     </div>
   </section>
 
   <footer>
-    Built and maintained by me. Last updated August 2026.
+    Built and maintained by me. Last updated November 2026.
   </footer>
 
-</div>
+  </div>
 </body>
 </html>
